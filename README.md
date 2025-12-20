@@ -1,6 +1,10 @@
 # GitHub Activity CLI
 
-A simple command-line interface (CLI) that fetches and displays the recent activity of a GitHub user using the GitHub API.
+A command-line interface (CLI) that fetches and displays the recent activity of a GitHub user.
+
+## Project Reference
+This project was built following the specification from roadmap.sh:  
+https://roadmap.sh/projects/github-user-activity
 
 ## Features
 - Fetches recent GitHub user activity
