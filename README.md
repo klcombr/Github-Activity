@@ -1,18 +1,24 @@
-# GitHub Activity CLI
+# Github Activity
 
-A command-line interface (CLI) that fetches and displays the recent activity of a GitHub user.
+CLI em Python que consulta a API publica do GitHub e exibe a atividade recente de um usuario, como pushes, issues, estrelas e forks, em formato legivel.
 
-## Project Reference
-This project was built following the specification from roadmap.sh:  
-https://roadmap.sh/projects/github-user-activity
+## Funcionalidades
 
-## Features
-- Fetches recent GitHub user activity
-- Displays events in a human-readable format
-- No external libraries
-- Handles API errors gracefully
+- Busca os eventos recentes de um usuario via API do GitHub.
+- Apresenta eventos em formato legivel com data.
+- Suporta PushEvent, IssuesEvent, WatchEvent e ForkEvent.
+- Limita a exibicao aos 10 eventos mais recentes.
+- Remove eventos duplicados.
+- Trata erros da API, como usuario nao encontrado e rate limit.
 
-## Usage
+## Como usar
 
 ```bash
-python main.py <github-username>
+python main.py <usuario_github>
+```
+
+Sem dependencias externas, apenas a biblioteca padrao do Python.
+
+## Licenca
+
+MIT
