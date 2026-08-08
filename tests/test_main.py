@@ -84,7 +84,7 @@ def test_fetch_events_returns_list():
     assert events == body
     req = mock_urlopen.call_args[0][0]
     assert isinstance(req, urllib.request.Request)
-    assert "User-Agent" in [h for h, _ in req.header_items()]
+    assert "user-agent" in [h.lower() for h, _ in req.header_items()]
 
 
 def test_fetch_events_uses_token():
